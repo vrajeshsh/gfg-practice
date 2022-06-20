@@ -1,16 +1,21 @@
 #User function Template for python3
-class Solution:
-    def revStr (ob, S):
-        # code here 
-        return S[::-1]
+
+def reverseWord(s):
+    #your code here
+    new_str=""
+    for i in s:
+        new_str = i + new_str
+        
+    return new_str
 #{ 
 #  Driver Code Starts
 #Initial Template for Python 3
-if __name__ == '__main__': 
-    t = int (input ())
-    for _ in range (t):
-        S = input()
-        
-        ob = Solution()
-        print(ob.revStr(S))
+
+if __name__ == "__main__":
+    t = int(input())
+    while(t>0):
+        s = input()
+        print(reverseWord(s))
+        t = t-1
+
 # } Driver Code Ends
