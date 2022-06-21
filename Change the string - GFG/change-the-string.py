@@ -4,7 +4,7 @@
 class Solution:
     def modify(self, s):
         # code here
-        if s[0].islower():
+        if ord(s[0])>=97:
             return s.lower()
         else:
             return s.upper()
